@@ -1,0 +1,674 @@
+/* ===========================================
+        DEFAULT VALUES
+        Font Family:    Roboto Condensed
+        Colors:
+            Turquoise   #34C6D3 (Button, Incons, Links, Lines and Backgrounds)
+            Steel Gray  #41464B (Headings)
+            Blue Bayoux #64707B (Paragraphs)
+            White       #FFFFFF (text with black backgrounds)
+            Black       #000000 
+            Red         #ff103d    
+transition: transform 1s cubic-bezier(.19, 1, .22, 1)
+transform translate3d 
+-webkit-font-smoothing: subpixel-antialiased;
+=============================================*/
+
+/* Two things here 1. when calling class tags unlike ID's the # is not needed 
+2. it is necessary that all tags above the container ID are set to height 100% for image to be full size*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto Condensed", "sans-serif";
+}
+
+h3 {
+    color: #41464B;
+    text-transform: uppercase;
+}
+h5 {
+    font-size: 3.5rem;
+    padding-bottom: 3rem;
+}
+
+p {
+    color: #64707B;
+    font-size: 16px;
+    font-weight: 300;
+}
+/* ===========================================
+                    YOUTUBE
+=============================================*/
+#youtube iframe {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+
+/* ===========================================
+                    HOME
+=============================================*/
+
+#home {
+    height: 100%;
+}
+
+.bg-video {
+  /*z-index: -1;*/
+  opacity: .7;
+  overflow: hidden; }
+  .bg-video__content {
+    position: absolute;
+        bottom: 0;
+        right: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
+    object-fit: cover;  
+}
+#HomeCover {
+    height: 100%;
+    /*position: relative;*/
+    /*background-image: url(../img/bg-home.jpg); */
+}
+
+#HomeContentBox {
+    /*will make it to 100% of its parent div*/
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#HomeContentBoxInner {
+    display: table-cell;
+    /* makes the content align tp the middle of the screen vertically */
+    vertical-align: middle;
+    /* makes the content align tp the middle of the screen horizontally */
+    /*text-align: center;*/
+}
+
+#HomeHeading h3 {
+    color: #41464B;
+    font-size: 55px;
+    /*700 font weight is only possible due to downloading the corresponding package from google fonts*/
+    font-weight: 700;
+    /*margin is set to top, right, bottom, left */
+    margin: 20px 0 20px 0;
+    text-transform: uppercase;
+}
+
+/* ===========================================
+                PARALLAX EFFECT
+=============================================*/
+
+.bg-parallax {
+    background-repeat: no-repeat;
+    /* cover will allow the image to scale with the browset window*/
+    background-size: cover;
+    /* center will allow the image to use center as the point of reference*/
+    background-position: center;
+    /*This adds prallex scrolling*/
+    background-attachment: fixed;
+}
+
+/* ===========================================
+                    BUTTONS
+=============================================*/
+
+.btn-general {
+    border-color: white;
+    border-width: 2px;
+    border-radius: 0;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: white;
+    color: white;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: white;
+    color: #41464B;
+}
+
+.btn-blue {
+    border-color: #34C6D3;
+    color: #34C6D3;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+    background-color: #34C6D3;
+    color: white;
+}
+.BtnBackToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    padding: 3px 15px;
+    border-radius: 0px;
+    display: none;
+}
+
+/* ===========================================
+                    ANIMATE
+=============================================*/
+
+#HomeCover,
+#HomeHeading,
+#HomeButton {
+    animation-duration: 0.5s;
+}
+
+#HomeCover {
+    animation-delay: 0.1s;
+}
+
+#HomeHeading {
+    animation-delay: 0.5s;
+}
+
+#HomeButton {
+    animation-delay: 1.0s;
+}
+
+/* ===========================================
+                    CONTENT BOX 
+=============================================*/
+
+.ContentBox {
+    padding: 60px 0 60px 0;
+}
+
+.ContentTitle h3 {
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.ContentTitleUnderline {
+    width: 30px;
+    height: 3px;
+    background-color: #34C6D3;
+    margin: 0 auto 30px auto;
+}
+
+#testimonials .ContentTitle h3 {
+    color: white;
+}
+
+/* ===========================================
+                    SERVIICES 
+=============================================*/
+
+.ServiceItem {
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.ServiceItemIcon i {
+    color: #34C6D3;
+    float: left;
+    padding: 15px;
+    margin-right: 25px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.ServiceItem:hover .ServiceItemIcon i {
+    color: white;
+    background-color: #34C6D3;
+}
+
+.ServiceItemTitle h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+.ServiceItemDesc p {
+    margin: 0;
+    padding-left: 85px;
+}
+
+/* ===========================================
+                    ABOUT 
+=============================================*/
+
+#AboutPicDiagonal {
+    width: 60%;
+    height: 700px;
+    float: right;
+    background-image: url(../img/bg-about.jpg);
+    border-left: 210px solid white;
+    border-top: 700px solid transparent;
+}
+
+#AboutContentBox {
+    float: left;
+    height: 700px;
+}
+
+#AboutContentBoxOuter {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#AboutContentBoxInner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about .ContentTitle h3 {
+    font-size: 38px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0 0 30px 0;
+}
+
+#about .ContentTitleUnderline {
+    margin: 0 0 30px 0;
+}
+
+#AboutDesc p {
+    margin-bottom: 30px;
+}
+
+/* ===========================================
+                    WORK 
+=============================================*/
+
+/*all elements that have class atribute that contain col- in a row class that also has a NoPadding class*/
+
+.row.NoPadding [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ImgWrapper {
+    overflow: hidden;
+
+}
+
+.ImgWrapper img {
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.ImgWrapper img:hover {
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+/* ===========================================
+                    TEAM 
+=============================================*/
+
+.TeamMember {
+    margin: 0 15px 0 15px;
+}
+
+.TeamMemberInfo {
+    padding: 10px 0 30px 0;
+}
+
+h4.TeamMemberName {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+}
+
+h4.TeamMemberDesignation {
+    color: #34C6D3;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+/* ===========================================
+                    SOCIAL ICONS 
+=============================================*/
+
+.SocialIconsList {
+    padding-left: 0;
+}
+
+.SocialIconsList li {
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.SocialIcn i {
+    font-size: 27px;
+}
+
+.GrayIcn i {
+    color: #64707B;
+}
+
+.GrayIcn i:hover {
+    color: #34C6D3;
+}
+.WhiteIcn {
+    color:white;
+}
+
+/* ===========================================
+                   TESTIMONIALS
+=============================================*/
+
+#TestimonialsCover {
+    background-image: url(../img/bg-testimonials.jpg);
+}
+
+#TestimonialsCover .ContentBox {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#CustomerTestimonials {
+    padding: 50px 0 50px 0;
+}
+
+.Testimonial img {
+    max-width: 120px;
+    margin: 0 auto 0 auto;
+}
+
+.Testimonial blockquote {
+    /*removes the left side bar on the text*/
+    border: 0;
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    color: white;
+    padding: 20px 150px 6px 150px;
+    position: relative;
+}
+
+.Testimonial blockquote p {
+    color: white;
+}
+
+.Testimonial blockquote::before,
+.Testimonial blockquote::after {
+    font-size: 80px;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.Testimonial blockquote::before {
+    content: "\201C";
+    top: 0;
+    left: 100px;
+}
+
+.Testimonial blockquote::after {
+    content: "\201D";
+    bottom: 0;
+    right: 100px;
+}
+
+.TestimonialAuthor p {
+    color: white;
+    font-size: 17px;
+}
+
+.TestimonialAuthor p block {
+    display: block;
+}
+
+/* ===========================================
+                   PRICING
+=============================================*/
+
+.PricingBox {
+    border: 3px solid #34c6d3;
+    padding: 50px 0;
+    margin: 40px 0;
+}
+
+h4.PricingTitle {
+    background: #34c6d3;
+    color: white;
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+
+h3.PricingValue {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+h3.PricingValue sup {
+    font-size: 28px;
+    font-weight: normal;
+    vertical-align: super;
+}
+
+ul.PricingSpec {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0 60px 0;
+}
+
+ul.PricingSpec li p {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.PricingBoxLg {
+    padding: 90px 0;
+    margin: 0;
+    background-color: #34c6d3;
+}
+
+.PricingBoxLg h4.PricingTitle {
+    color: #34c6d3;
+    background-color: white;
+}
+
+.PricingBoxLg ul.PricingSpec li p {
+    color: white;
+}
+
+/* ===========================================
+                   STATS
+=============================================*/
+
+#StatsCover {
+    background-image: url(../img/bg-stats.jpg)
+}
+
+#stats .ContentBox {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#stats .ContentTitle h3 {
+    color: white;
+}
+
+.StatsItem {
+    padding: 100px 0;
+}
+
+.StatsItem i {
+    color: #34c6d3;
+}
+
+.StatsItem h2 {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+
+.StatsItem p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+/* ===========================================
+                   CLIENTS
+=============================================*/
+
+#SingleClient {
+    padding: 40px 0;
+}
+/* ===========================================
+                   CONTACTS
+=============================================*/
+footer {
+    background-color: #41464B;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0,0,0,0.1);
+}
+#ContactLeftSide h3,
+#ContactRightSide h3 {
+    color: white;
+    font-size: 27px;
+    font-weight: 700;
+}
+#ContactLeftSide p {
+    color: white;
+    margin-bottom: 30px;
+}
+#ContactInfo {
+    background-image: url(../img/world-map.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#ContactInfo address {
+    color: white;
+}
+#ContactInfo address strong,
+#PhoneFaxEmail strong {
+    letter-spacing: 1px;
+}
+form .FormControl {
+    width: 100%;
+    background: transparent;
+    border-radius: 0px;
+    border-color: white;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    color: white;
+}
+/* ===========================================
+                   FOOTER MENU
+=============================================*/
+#FooterBottom {
+    background-color: rgba(0,0,0,0.2);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+#FooterCopyrights p {
+    margin: 0 0;
+    color: white;
+}
+#FooterMenu {
+    float: left;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+#FooterMenu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+#FooterMenu ul li {
+    display: inline-block;
+}
+#FooterMenu a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 10px;
+    text-decoration: none;
+}
+#FooterMenu a:hover {
+    color: #34C6D3;
+}
+/* ===========================================
+                   NAVIGATION
+=============================================*/
+.navbar {
+    padding: 10px 0;
+    transition: all .5s ease-in-out;
+}
+.VescoTopNav {
+    background: rgba(0,0,0,0.7);
+}
+.VescoNavWrapper {
+    padding: 0 85px;
+}
+.navbar-nav {
+    float: right;
+}
+.navbar-nav > li > a {
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus{
+    background: none;
+    color: #34C6D3;
+}
+.navbar-toggle {
+    background-color: rgba(0,0,0, 0.1);
+    border: 1px solid #fff;
+    border-radius: 0;
+}
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-collapse {
+    /*important ignors bootstrap css property*/
+    max-height: none !important;
+}
+.VescoTopNav ul.navbar-nav > li.active > a {
+    color: #34C6D3;
+}
+.navbar-brand img {
+    border: 0;
+    position: absolute;
+    top: 0;
+    margin-top: -65px;
+}

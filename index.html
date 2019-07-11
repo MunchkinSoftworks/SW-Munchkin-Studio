@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vieport" content="width=device-width, initial-scale=1">
+
+    <!--title (displayed in search engine results) -->
+    <title>Modern Responsive Website</title>
+    <!-- Favicon (the icon used for the website or title) -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- font for google roboto condensed (has to be added before Style CSS as the font will be used in the CSS file) -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/fontAwesome/css/font-awesome.min.css">
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!--animate CSS library link-->
+    <link rel="stylesheet" href="css/animateCSS/animate.css">
+    <!-- Magnific PopUp CSS -->
+    <link rel="stylesheet" href="css/MagnificPopUp/magnific-popup.css">
+    <!-- Owl Carousel 2 -->
+    <link rel="stylesheet" href="css/OwlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/OwlCarousel/owl.theme.default.min.css">
+
+    <!-- link style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="71">
+    <!-- navigation menu -->
+    <header>
+        <nav class="navbar navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="VescoNavWrapper">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#VescoMenu">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#home">
+                            <img src="img/SW_Munchkin_Logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div id="VescoMenu" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                                <li><a class="SmoothScroll" href="#home">Home</a></li>
+                                <li><a class="SmoothScroll" href="#services">Services</a></li>
+                                <li><a class="SmoothScroll" href="#about">About</a></li>
+                                <li><a class="SmoothScroll" href="#work">Work</a></li>
+                                <li><a class="SmoothScroll" href="#team">Team</a></li>
+                                <li><a class="SmoothScroll" href="#testimonials">Testimonials</a></li>
+                                <li><a class="SmoothScroll" href="#pricing">Pricing</a></li>
+                                <li><a class="SmoothScroll" href="#stats">Stats</a></li>
+                                <li><a class="SmoothScroll" href="#clients">Clients</a></li>
+                                <li><a class="SmoothScroll" href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Home -->
+    <section id="home">
+
+        <!-- Sets the hero image; animated class is part of the animate.css library linked above  -->
+        <div id="HomeCover" class="animated fadeIn">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/Sunset-Lapse.mp4" type="video/mp4">
+                    <source src="img/Sunset-Lapse.webm" type="video/webm">
+                    Your browser is not supported! 
+                </video>
+            </div>
+            <div id="HomeContentBox">
+                <!-- the class text-center is used to the same effect of css option but it is a bootstrap predifined class-->
+                <div id="HomeContentBoxInner" class="text-center">
+                    <!-- HTML for heading -->
+                    <div id="HomeHeading" class="animated zoomIn">
+                        <h3>SW Munchkin Studio</h3>
+                        <h5>Designing tomorrow's websites</h5>
+                    </div>
+                    <!-- HTML for home button -->
+                    <div id="HomeButton" class="animated zoomIn">
+                        <!-- #work is refering to a section that will be added later on -->
+                        <a class="btn btn-lg btn-general btn-white SmoothScroll" href="#work" role="button" title="View Our Work">View Our Work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Services -->
+    <section id="services">
+        <div class="ContentBox">
+            <!-- Go to https://mynameismatthieu.com/WOW/docs.html to see how to configure wow -->
+            <div class="ContentTitle wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                <h3>Services</h3>
+                <div class="ContentTitleUnderline">
+
+                </div>
+            </div>
+            <!-- these are all bootstrap classes -->
+            <div class="container">
+                <div class="row wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="col-md-4 col-sm-6 col-xl-4">
+                        <div class="ServiceItem">
+                            <div class="ServiceItemIcon">
+                                <i class="fa fa-paint-brush fa-3x"></i>
+                            </div>
+                            <div class="ServiceItemTitle">
+                                <h3>Web Design</h3>
+                            </div>
+                            <div class="ServiceItemDesc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xl-4">
+                        <div class="ServiceItem">
+                            <div class="ServiceItemIcon">
+                                <i class="fa fa-laptop fa-3x"></i>
+                            </div>
+                            <div class="ServiceItemTitle">
+                                <h3>Web Development</h3>
+                            </div>
+                            <div class="ServiceItemDesc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xl-4">
+                        <div class="ServiceItem">
+                            <div class="ServiceItemIcon">
+                                <i class="fa fa-tablet fa-3x"></i>
+                            </div>
+                            <div class="ServiceItemTitle">
+                                <h3>Mobile Apps</h3>
+                            </div>
+                            <div class="ServiceItemDesc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- begining of second row -->
+                    <div class="col-md-4 col-sm-6 col-xl-4">
+                        <div class="ServiceItem">
+                            <div class="ServiceItemIcon">
+                                <i class="fa fa-search fa-3x"></i>
+                            </div>
+                            <div class="ServiceItemTitle">
+                                <h3>SEO Optimization</h3>
+                            </div>
+                            <div class="ServiceItemDesc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xl-4">
+                        <div class="ServiceItem">
+                            <div class="ServiceItemIcon">
+                                <i class="fa fa-pencil-square-o fa-3x"></i>
+                            </div>
+                            <div class="ServiceItemTitle">
+                                <h3>UX Design</h3>
+                            </div>
+                            <div class="ServiceItemDesc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xl-4">
+                        <div class="ServiceItem">
+                            <div class="ServiceItemIcon">
+                                <i class="fa fa-life-ring fa-3x"></i>
+                            </div>
+                            <div class="ServiceItemTitle">
+                                <h3>Support</h3>
+                            </div>
+                            <div class="ServiceItemDesc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="youtube"> 
+        <div class="ContentTitle wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h3>Maximum Cuteness</h3>
+            <div class="ContentTitleUnderline"></div>
+        </div>
+        <iframe class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" width="560" height="315" src="https://www.youtube.com/embed/V7QXNMFQLVc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+    </section>
+     <!-- About -->
+    <section id="about">
+        <!-- About right section diagonal background image with parallax -->
+        <div id="AboutPicDiagonal" class="bg-parallax"></div>
+        
+        <!-- About left side with content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="AboutContentBox">
+                        <div id="AboutContentBoxOuter">
+                            <div id="AboutContentBoxInner">
+                                <!-- Go to https://mynameismatthieu.com/WOW/docs.html to see how to configure wow -->
+                                <div class="ContentTitle wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                                    <h3>About Us</h3>
+                                    <div class="ContentTitleUnderline"></div>
+                                </div>
+                                <div id="AboutDesc" class="wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis possimus iure atque soluta modi, consectetur, amet blanditiis incidunt tempore voluptas vitae eum, in. In, odio pariatur vero expedita. Aliquam, quis.</p>
+                                </div>
+                                <div id="AboutBtn" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                                    <a class="btn btn-lg btn-general btn-blue SmoothScroll" href="#work" role="button">Our Work</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work Section -->
+    <section id="work">
+
+        <div class="ContentBox">
+            <!-- Go to https://mynameismatthieu.com/WOW/docs.html to see how to configure wow -->
+            <div class="ContentTitle wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                <h3>Our Work</h3>
+                <div class="ContentTitleUnderline">
+                </div>
+            </div>
+            <!-- container fluid class spawns the full width of the screen and it is a bootstrap predefined class-->
+            <div class="container-fluid">
+                <div class="row NoPadding wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="col-md-3 col-sm-4 col-xl-3">
+                        <div class="ImgWrapper">
+                            <a href="img/work/1.jpg" title="Work Description Goes Here">
+                            <img src="img/work/1.jpg" class="img-responsive" alt="Work">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xl-3">
+                        <div class="ImgWrapper">
+                            <a href="img/work/2.jpg" title="Work Description Goes Here">
+                            <img src="img/work/2.jpg" class="img-responsive" alt="Work">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xl-3">
+                        <div class="ImgWrapper">
+                            <a href="img/work/3.jpg" title="Work Description Goes Here">
+                            <img src="img/work/3.jpg" class="img-responsive" alt="Work">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xl-3">
+                        <div class="ImgWrapper">
+                            <a href="img/work/4.jpg" title="Work Description Goes Here">
+                            <img src="img/work/4.jpg" class="img-responsive" alt="Work">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xl-3">
+                        <div class="ImgWrapper">
+                            <a href="img/work/5.jpg" title="Work Description Goes Here">
+                            <img src="img/work/5.jpg" class="img-responsive" alt="Work">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xl-3">
+                        <div class="ImgWrapper">
+                            <a href="img/work/6.jpg" title="Work Description Goes Here">
+                            <img src="img/work/6.jpg" class="img-responsive" alt="Work">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xl-3">
+                        <div class="ImgWrapper">
+                            <a href="img/work/7.jpg" title="Work Description Goes Here">
+                            <img src="img/work/7.jpg" class="img-responsive" alt="Work">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xl-3">
+                        <div class="ImgWrapper">
+                            <a href="img/work/8.jpg" title="Work Description Goes Here">
+                            <img src="img/work/8.jpg" class="img-responsive" alt="Work">
+                        </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Team Section -->
+    <section id="team">
+
+        <div class="ContentBox">
+            <!-- Go to https://mynameismatthieu.com/WOW/docs.html to see how to configure wow -->
+            <div class="ContentTitle wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                <h3>Our Team</h3>
+                <div class="ContentTitleUnderline">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <!-- even though there are 3 pictures of team members we are configuring one column in one row and we will use carrusel slider feature to go through pics -->
+                    <div class="col-md-12">
+                        <div id="TeamMembers" class="owl-carousel owl-theme">
+                            <div class="TeamMember">
+                                <img src="img/team/team-1.jpg" class="img-responsive" alt="team member">
+                                <div class="TeamMemberInfo text-center">
+                                    <h4 class="TeamMemberName">Dani Watrous</h4>
+                                    <h4 class="TeamMemberDesignation">CEO</h4>
+                                    <!-- ul=unordered list; li=list item; a=anchor element -->
+                                    <ul class="SocialIconsList">
+                                        <li>
+                                            <a href="#" class="SocialIcn GrayIcn">
+                                            <i class="fa fa-facebook fa-1x"></i>
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="SocialIcn GrayIcn">
+                                            <i class="fa fa-twitter fa-1x"></i>
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="SocialIcn GrayIcn">
+                                            <i class="fa fa-twitch fa-1x"></i>
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="TeamMember">
+                                <img src="img/team/team-2.jpg" class="img-responsive" alt="team member">
+                                <div class="TeamMemberInfo text-center">
+                                    <h4 class="TeamMemberName">Ginger Beauty</h4>
+                                    <h4 class="TeamMemberDesignation">Co-Founder</h4>
+                                    <!-- ul=unordered list; li=list item; a=anchor element -->
+                                    <ul class="SocialIconsList">
+                                        <li>
+                                            <a href="#" class="SocialIcn GrayIcn">
+                                            <i class="fa fa-facebook fa-1x"></i>
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="SocialIcn GrayIcn">
+                                            <i class="fa fa-twitter fa-1x"></i>
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="SocialIcn GrayIcn">
+                                            <i class="fa fa-twitch fa-1x"></i>
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="TeamMember">
+                                <img src="img/team/team-3.jpg" class="img-responsive" alt="team member">
+                                <div class="TeamMemberInfo text-center">
+                                    <h4 class="TeamMemberName">Smiley Dude</h4>
+                                    <h4 class="TeamMemberDesignation">Sr. Developer</h4>
+                                    <!-- ul=unordered list; li=list item; a=anchor element -->
+                                    <ul class="SocialIconsList">
+                                        <li>
+                                            <a href="#" class="SocialIcn GrayIcn">
+                                            <i class="fa fa-facebook fa-1x"></i>
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="SocialIcn GrayIcn">
+                                            <i class="fa fa-twitter fa-1x"></i>
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="SocialIcn GrayIcn">
+                                            <i class="fa fa-twitch fa-1x"></i>
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="TeamMember">
+                                <img src="img/team/team-4.jpg" class="img-responsive" alt="team member">
+                                <div class="TeamMemberInfo text-center">
+                                    <h4 class="TeamMemberName">Average Nerd</h4>
+                                    <h4 class="TeamMemberDesignation">Sr. Designer</h4>
+                                    <!-- ul=unordered list; li=list item; a=anchor element -->
+                                    <ul class="SocialIconsList">
+                                        <li>
+                                            <a href="#" class="SocialIcn GrayIcn">
+                                            <i class="fa fa-facebook fa-1x"></i>
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="SocialIcn GrayIcn">
+                                            <i class="fa fa-twitter fa-1x"></i>
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="SocialIcn GrayIcn">
+                                            <i class="fa fa-twitch fa-1x"></i>
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="TeamMember">
+                                <img src="img/team/team-5.jpg" class="img-responsive" alt="team member">
+                                <div class="TeamMemberInfo text-center">
+                                    <h4 class="TeamMemberName">Mr. Hipster</h4>
+                                    <h4 class="TeamMemberDesignation">Sales</h4>
+                                    <!-- ul=unordered list; li=list item; a=anchor element -->
+                                    <ul class="SocialIconsList">
+                                        <li>
+                                            <a href="#" class="SocialIcn GrayIcn">
+                                            <i class="fa fa-facebook fa-1x"></i>
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="SocialIcn GrayIcn">
+                                            <i class="fa fa-twitter fa-1x"></i>
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="SocialIcn GrayIcn">
+                                            <i class="fa fa-twitch fa-1x"></i>
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div id="TestimonialsCover" class="bg-parallax">
+            <div class="ContentBox">
+                <!-- Go to https://mynameismatthieu.com/WOW/docs.html to see how to configure wow -->
+                <div class="ContentTitle wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <h3>What Our Customers Say</h3>
+                    <div class="ContentTitleUnderline">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row wow animated bounceInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="col-md-12">
+                            <div id="CustomerTestimonials" class="text-center owl-carousel owl-theme">
+                                <div class="Testimonial">
+                                    <!-- both img-responsive and img-circle class are bootstrap predifined classes -->
+                                    <img src="img/client/client-1.jpg" class="img-responsive img-circle" alt="Testimonial">
+                                    <blockquote class="text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aliquam, quaerat exercitationem libero esse impedit iusto qui animi quod ipsam voluptatem inventore quasi dignissimos deserunt at voluptate, numquam quos! Amet.</p>
+                                    </blockquote>
+                                    <div class="TestimonialAuthor">
+                                        <p>
+                                            <strong>Dani Rivera</strong>
+                                            <span>CEO & Nerd</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="Testimonial">
+                                    <!-- both img-responsive and img-circle class are bootstrap predifined classes -->
+                                    <img src="img/client/client-2.jpg" class="img-responsive img-circle" alt="Testimonial">
+                                    <blockquote class="text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aliquam, quaerat exercitationem libero esse impedit iusto qui animi quod ipsam voluptatem inventore quasi dignissimos deserunt at voluptate, numquam quos! Amet.</p>
+                                    </blockquote>
+                                    <div class="TestimonialAuthor">
+                                        <p>
+                                            <strong>Mark Revro</strong>
+                                            <span>CEO & Gamer</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="Testimonial">
+                                    <!-- both img-responsive and img-circle class are bootstrap predifined classes -->
+                                    <img src="img/client/client-3.jpg" class="img-responsive img-circle" alt="Testimonial">
+                                    <blockquote class="text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aliquam, quaerat exercitationem libero esse impedit iusto qui animi quod ipsam voluptatem inventore quasi dignissimos deserunt at voluptate, numquam quos! Amet.</p>
+                                    </blockquote>
+                                    <div class="TestimonialAuthor">
+                                        <p>
+                                            <strong>Mathew Steel</strong>
+                                            <span>CEO & Streamer</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="ContentBox">
+            <!-- Go to https://mynameismatthieu.com/WOW/docs.html to see how to configure wow -->
+            <div class="ContentTitle wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                <h3>Our Pricing</h3>
+                <div class="ContentTitleUnderline">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 wow animated zoomIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="PricingBox text-center">
+                            <h4 class="PricingTitle">BASIC</h4>
+                            <h3 class="PricingValue">49<sup>$</sup></h3>
+                            <ul class="PricingSpec">
+                                <li>
+                                    <p>500 Emails</p>
+                                </li>
+                                <li>
+                                    <p>5GB SSD Storage</p>
+                                </li>
+                                <li>
+                                    <p>5GB Bandwith</p>
+                                </li>
+                                <li>
+                                    <p>UNLIMITED DOMAINS</p>
+                                </li>
+                            </ul>
+                            <div class="PricingBtn">
+                                <a class="btn btn-lg btn-general btn-blue" href="#" role="button">
+                                        Purchase
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow animated bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="PricingBox PricingBoxLg text-center">
+                            <h4 class="PricingTitle">ENTERPRISE</h4>
+                            <h3 class="PricingValue">89<sup>$</sup></h3>
+                            <ul class="PricingSpec">
+                                <li>
+                                    <p>2000 Emails</p>
+                                </li>
+                                <li>
+                                    <p>25GB SSD Storage</p>
+                                </li>
+                                <li>
+                                    <p>25GB Bandwith</p>
+                                </li>
+                                <li>
+                                    <p>UNLIMITED DOMAINS</p>
+                                </li>
+                            </ul>
+                            <div class="PricingBtn">
+                                <a class="btn btn-lg btn-general btn-white" href="#" role="button">
+                                        Purchase
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow animated zoomIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="PricingBox text-center">
+                            <h4 class="PricingTitle">STANDARD</h4>
+                            <h3 class="PricingValue">69<sup>$</sup></h3>
+                            <ul class="PricingSpec">
+                                <li>
+                                    <p>1000 Emails</p>
+                                </li>
+                                <li>
+                                    <p>15GB SSD Storage</p>
+                                </li>
+                                <li>
+                                    <p>15GB Bandwith</p>
+                                </li>
+                                <li>
+                                    <p>UNLIMITED DOMAINS</p>
+                                </li>
+                            </ul>
+                            <div class="PricingBtn">
+                                <a class="btn btn-lg btn-general btn-blue" href="#" role="button">
+                                        Purchase
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Stats Section -->
+    <section id="stats">
+        <div id="StatsCover" class="bg-parallax">
+            <div class="ContentBox">
+                <!-- Go to https://mynameismatthieu.com/WOW/docs.html to see how to configure wow -->
+                <div class="ContentTitle wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <h3>We never Stop Improving</h3>
+                    <div class="ContentTitleUnderline"></div>
+                </div>
+                <div class="container">
+                    <div class="row text-center wow animated bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="StatsItem">
+                                <i class="fa fa-cloud-download fa-5x"></i>
+                                <h2><span class="counter">11590</span><span>+</span></h2>
+                                <p>Downloads</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="StatsItem">
+                                <i class="fa fa-star-o fa-5x"></i>
+                                <h2><span class="counter">35</span><span>+</span></h2>
+                                <p>Awards</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="StatsItem">
+                                <i class="fa fa-heart-o fa-5x"></i>
+                                <h2><span class="counter">6199</span><span>+</span></h2>
+                                <p>Likes</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="StatsItem">
+                                <i class="fa fa-check fa-5x"></i>
+                                <h2><span class="counter">3590</span><span>+</span></h2>
+                                <p>Recomended</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients Section -->
+    <section id="clients">
+        <div class="ContentBox">
+            <!-- Go to https://mynameismatthieu.com/WOW/docs.html to see how to configure wow -->
+            <div class="ContentTitle wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                <h3>Our Clients</h3>
+                <div class="ContentTitleUnderline"></div>
+            </div>
+            <div class="container">
+                <div class="row wow animated bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="col-md-12">
+                        <div id="ClientsWrapper" class="owl-carousel owl-theme">
+                            <div id="SingleClient">
+                                <img src="img/client/logos/logo-1.jpg" class="img-responsive" alt="client">
+                            </div>
+                            <div id="SingleClient">
+                                <img src="img/client/logos/logo-2.jpg" class="img-responsive" alt="client">
+                            </div>
+                            <div id="SingleClient">
+                                <img src="img/client/logos/logo-3.jpg" class="img-responsive" alt="client">
+                            </div>
+                            <div id="SingleClient">
+                                <img src="img/client/logos/logo-4.jpg" class="img-responsive" alt="client">
+                            </div>
+                            <div id="SingleClient">
+                                <img src="img/client/logos/logo-5.jpg" class="img-responsive" alt="client">
+                            </div>
+                            <div id="SingleClient">
+                                <img src="img/client/logos/logo-6.jpg" class="img-responsive" alt="client">
+                            </div>
+                            <div id="SingleClient">
+                                <img src="img/client/logos/logo-7.jpg" class="img-responsive" alt="client">
+                            </div>
+                            <div id="SingleClient">
+                                <img src="img/client/logos/logo-8.jpg" class="img-responsive" alt="client">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="ContactLeftSide">
+                            <h3>Software munchkin</h3>
+                            <p>We believe in <strong>Simple</strong>, <strong>Clean</strong> & <strong>Modern</strong> Design Standards with Responsive Approach. Browse the amazing work of our company.</p>
+                            <div id="ContactInfo">
+                                <address>
+                                   <strong>Headquarters:</strong><br>
+                                   <p>Phoenix, Arizona - United States</p>
+                               </address>
+                                <div id="PhoneFaxEmail">
+                                    <p>
+                                        <!--<strong>Phone:</strong> (91) 8974 56984 <br>
+                                        <strong>Fax:</strong> (91) 8643 56771 <br>
+                                        <strong>Email:</strong> info@vesco.com <br> -->
+                                    </p>
+                                </div>
+                            </div>
+                            <ul class="SocialIconsList">
+                                <li>
+                                    <a href="#" class="SocialIcn WhiteIcn">
+                                            <i class="fa fa-facebook fa-2x"></i>
+                                        </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="SocialIcn WhiteIcn">
+                                            <i class="fa fa-twitter fa-2x"></i>
+                                        </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="SocialIcn WhiteIcn">
+                                            <i class="fa fa-twitch fa-2x"></i>
+                                        </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="SocialIcn WhiteIcn">
+                                            <i class="fa fa-youtube-play fa-2x"></i>
+                                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="ContactRightSide">
+                            <h3>Contact Us</h3>
+                            <form action="#">
+                                <input type="text" name="full-name" placeholder="Full Name" class="FormControl">
+                                <input type="text" name="email" placeholder="Email Address" class="FormControl">
+                                <textarea rows="5" name="message" placeholder="Message..." class="FormControl"></textarea>
+
+                                <div id="SendBtn">
+                                    <a class="btn btn-lg btn-general btn-white" href="#" role="button">SEND</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="FooterBottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="FooterCopyrights">
+                            <p>Copyrights &copy; 2018 All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 hidden-xs">
+                        <div id="FooterMenu" class="hidden-sm">
+                            <ul>
+                                <li><a class="SmoothScroll" href="#home">Home</a>/</li>
+                                <li><a class="SmoothScroll" href="#services">Services</a>/</li>
+                                <li><a class="SmoothScroll" href="#about">About</a>/</li>
+                                <li><a class="SmoothScroll" href="#work">Work</a>/</li>
+                                <li><a class="SmoothScroll" href="#team">Team</a>/</li>
+                                <li><a class="SmoothScroll" href="#testimonials">Testimonials</a>/</li>
+                                <li><a class="SmoothScroll" href="#pricing">Pricing</a>/</li>
+                                <li><a class="SmoothScroll" href="#stats">Stats</a>/</li>
+                                <li><a class="SmoothScroll" href="#clients">Clients</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#home" id="BackToTop" class="btn btn-sm btn-blue BtnBackToTop smooth-scroll" title="home" role="button">
+            <i class="fa fa-angle-up"></i>
+        </a>
+    </footer>
+
+    <!-- jquery (has to be called before custome js)-->
+    <script src="js/jquery.js"></script>
+    <!-- bootstrap for jquery link (has to go after the jquery link as bootstrap uses jquery) -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- WOW JS -->
+    <script src="js/WOW/wow.min.js"></script>
+    <!-- magnific popup js-->
+    <script src="js/MagnificPopUp/jquery.magnific-popup.min.js"></script>
+    <!-- Owl Carousel 2 -->
+    <script src="js/OwlCarousel/owl.carousel.min.js"></script>
+    <!-- counter -->
+    <script src="js/counterUp/jquery.waypoints.min.js"></script>
+    <script src="js/counterUp/jquery.counterup.min.js"></script>
+
+    <!-- easing lib jquery -->
+    <script src="js/easing/jquery.easing.1.3.js"></script>
+    <!-- link custom JS (place always before closing body tag) -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
